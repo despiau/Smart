@@ -26,6 +26,9 @@
             stroke-linecap: round;
             stroke-width: 10;
         }
+        .sparkle {
+            fill: #fff;
+        }
         @keyframes float {
             0%, 100% { transform: translate(0, 0); }
             50% { transform: translate(0, -20px); }
@@ -65,7 +68,9 @@
                         <animateTransform attributeName="transform" type="translate" values="0 0; 0 -20; 0 0" dur="8s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1" />
                     </circle>
                     <path class="reflection" d="M108.61,289.12c.32-7.2,5.81-12.32,12.42-13.28">
-                        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -20; 0 0" dur="8s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1" />
+                        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -20; 0 0" dur="8s" repeatCount="indefinite"
+
+ additive="sum" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1" />
                     </path>
                 </g>
                 <g>
@@ -101,9 +106,29 @@
                 <path class="bubble" d="M112.69,424.83l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z">
                     <animateTransform attributeName="transform" type="rotate" from="0 113.575 400.235" to="360 113.575 400.235" dur="32s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1" />
                 </path>
-                <path class="bubble" d="M290.17,153.37l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z">
+                <path class="bubble" d="M290.17,153.37l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,
+
+0Z">
                     <animateTransform attributeName="transform" type="rotate" from="0 291.055 128.775" to="360 291.055 128.775" dur="28s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1" />
                 </path>
+                <!-- Sparkling effect -->
+                <g class="sparkles">
+                    <circle class="sparkle" cx="150" cy="100" r="2">
+                        <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle class="sparkle" cx="400" cy="300" r="1.5">
+                        <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0.5s" />
+                    </circle>
+                    <circle class="sparkle" cx="280" cy="400" r="2">
+                        <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="1s" />
+                    </circle>
+                    <circle class="sparkle" cx="450" cy="150" r="1.8">
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="0.7s" />
+                    </circle>
+                    <circle class="sparkle" cx="100" cy="350" r="1.7">
+                        <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite" begin="1.2s" />
+                    </circle>
+                </g>
             </g>
         </svg>
     </div>
