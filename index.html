@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cleaning Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ef436d;
+            overflow: hidden;
+        }
+        .bubble {
+            position: absolute;
+            animation: bubble 10s infinite ease-in-out;
+        }
+        @keyframes bubble {
+            0% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1) translateY(-10px);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="relative flex items-center justify-center h-screen">
+    <div class="absolute top-0 left-0 p-4">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-24 h-24 text-white">
+            <circle class="cls-1" cx="121.03" cy="289.55" r="37.3" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-2" d="M108.61,289.12c.32-7.2,5.81-12.32,12.42-13.28" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            <circle class="cls-1" cx="302.69" cy="267.19" r="79.39" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-2" d="M252.39,262.77c1.97-32.12,24.99-48.07,49.54-49.88" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            <circle class="cls-1" cx="164.17" cy="142.5" r="57.27" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-2" d="M133.04,134.18c.85-12.91,11.26-22.89,24.17-23.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            <circle class="cls-1" cx="371.37" cy="350.07" r="57.27" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-2" d="M339.32,342.24c.85-13.66,11.94-23.66,24.54-23.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-1" d="M385.37,167.47l-5.24-8.24c-6.27-9.85-14.62-18.21-24.48-24.48l-8.24-5.24c-1.05-.67-1.05-2.21,0-2.88l8.24-5.24c9.85-6.27,18.21-14.62,24.48-24.48l5.24-8.24c.67-1.05,2.21-1.05,2.88,0l5.24,8.24c6.27,9.85,14.62,18.21,24.48,24.48l8.24,5.24c1.05.67,1.05,2.21,0,2.88l-8.24,5.24c-9.85,6.27-18.21,14.62-24.48,24.48l-5.24,8.24c-.67,1.05-2.21,1.05-2.88,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-1" d="M208.23,425.98l-6.91-10.86c-8.26-12.98-19.27-23.99-32.26-32.26l-10.86-6.91c-1.39-.88-1.39-2.91,0-3.79l10.86-6.91c12.98-8.26,23.99-19.27,32.26-32.26l6.91-10.86c.88-1.39,2.91-1.39,3.79,0l6.91,10.86c8.26,12.98,19.27,23.99,32.26,32.26l10.86,6.91c1.39.88,1.39,2.91,0,3.79l-10.86,6.91c-12.98,8.26-23.99,19.27-32.26,32.26l-6.91,10.86c-.88,1.39-2.91,1.39-3.79,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-1" d="M112.69,424.83l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+            <path class="cls-1" d="M290.17,153.37l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+        </svg>
+    </div>
+    <div class="absolute inset-0 w-full h-full">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute inset-0 w-full h-full">
+            <circle class="cls-1 bubble" cx="121.03" cy="289.55" r="37.3" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 20px; height: 20px; top: 20%; left: 10%; animation-delay: 0s;">
+                <path class="cls-2" d="M108.61,289.12c.32-7.2,5.81-12.32,12.42-13.28" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            </circle>
+            <circle class="cls-1 bubble" cx="302.69" cy="267.19" r="79.39" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 30px; height: 30px; top: 50%; left: 70%; animation-delay: 2s;">
+                <path class="cls-2" d="M252.39,262.77c1.97-32.12,24.99-48.07,49.54-49.88" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            </circle>
+            <circle class="cls-1 bubble" cx="164.17" cy="142.5" r="57.27" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 25px; height: 25px; top: 10%; left: 30%; animation-delay: 4s;">
+                <path class="cls-2" d="M133.04,134.18c.85-12.91,11.26-22.89,24.17-23.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            </circle>
+            <circle class="cls-1 bubble" cx="371.37" cy="350.07" r="57.27" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 80px; height: 80px; top: 70%; left: 80%; animation-delay: 14s;">
+                <path class="cls-2" d="M339.32,342.24c.85-13.66,11.94-23.66,24.54-23.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+            </circle>
+            <path class="cls-1 bubble" d="M385.37,167.47l-5.24-8.24c-6.27-9.85-14.62-18.21-24.48-24.48l-8.24-5.24c-1.05-.67-1.05-2.21,0-2.88l8.24-5.24c9.85-6.27,18.21-14.62,24.48-24.48l5.24-8.24c.67-1.05,2.21-1.05,2.88,0l5.24,8.24c6.27,9.85,14.62,18.21,24.48,24.48l8.24,5.24c1.05.67,1.05,2.21,0,2.88l-8.24,5.24c-9.85,6.27-18.21,14.62-24.48,24.48l-5.24,8.24c-.67,1.05-2.21,1.05-2.88,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 40px; height: 40px; top: 60%; left: 40%; animation-delay: 6s;"></path>
+            <path class="cls-1 bubble" d="M208.23,425.98l-6.91-10.86c-8.26-12.98-19.27-23.99-32.26-32.26l-10.86-6.91c-1.39-.88-1.39-2.91,0-3.79l10.86-6.91c12.98-8.26,23.99-19.27,32.26-32.26l6.91-10.86c.88-1.39,2.91-1.39,3.79,0l6.91,10.86c8.26,12.98,19.27,23.99,32.26,32.26l10.86,6.91c1.39.88,1.39,2.91,0,3.79l-10.86,6.91c-12.98,8.26-23.99,19.27-32.26,32.26l-6.91,10.86c-.88,1.39-2.91,1.39-3.79,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 50px; height: 50px; top: 80%; left: 20%; animation-delay: 8s;"></path>
+            <path class="cls-1 bubble" d="M112.69,424.83l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 60px; height: 60px; top: 30%; left: 50%; animation-delay: 10s;"></path>
+            <path class="cls-1 bubble" d="M290.17,153.37l-3.22-5.07c-3.86-6.06-8.99-11.2-15.05-15.05l-5.07-3.22c-.65-.41-.65-1.36,0-1.77l5.07-3.22c6.06-3.86,11.2-8.99,15.05-15.05l3.22-5.07c.41-.65,1.36-.65,1.77,0l3.22,5.07c3.86,6.06,8.99,11.2,15.05,15.05l5.07,3.22c.65.41.65,1.36,0,1.77l-5.07,3.22c-6.06,3.86-11.2,8.99-15.05,15.05l-3.22,5.07c-.41.65-1.36.65-1.77,0Z" fill="#ef456d" stroke="#fff" stroke-miterlimit="10" stroke-width="10" style="width: 70px; height: 70px; top: 40%; left: 60%; animation-delay: 12s;"></path>
+        </svg>
+    </div>
+</body>
+</html>
